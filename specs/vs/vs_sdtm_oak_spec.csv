@@ -1,0 +1,18 @@
+raw_dataset,raw_dataset_label,raw_variable,raw_variable_label,raw_data_format,mapping_is_dataset,sdtm_annotation
+vs_raw,Vital Signs,,,,TRUE,VS.VSCAT = 'VITAL SIGNS'
+vs_raw,Vital Signs,VTLD,Date,dd/mmm/yyyy,FALSE,VSDTC
+vs_raw,Vital Signs,IT.HEIGHT_VSORRES,Height,,FALSE,VSORRES when VSTESTCD = HEIGHT
+vs_raw,Vital Signs,IT.HEIGHT_VSORRES,Height,,FALSE,VSORRESU = 'IN'
+vs_raw,Vital Signs,IT.WEIGHT,Weight,,FALSE,VSORRES when VSTESTCD = WEIGHT
+vs_raw,Vital Signs,IT.WEIGHT,Weight,,FALSE,VSORRESU = 'LB'
+vs_raw,Vital Signs,IT.TEMP,Temperature,,FALSE,VSORRES when VSTESTCD = TEMP
+vs_raw,Vital Signs,IT.TEMP,Temperature,,FALSE,VSORRESU = 'F'
+vs_raw,Vital Signs,IT.TEMP_LOC,Temperature Location,,FALSE,If VS.VSTEST = TEMP then VSPOS
+vs_raw,Vital Signs,TMPTC,Timepoint,,FALSE,VSTPT
+vs_raw,Vital Signs,SYS_BP,Systolic Blood Pressure,,FALSE,VSORRES when VSTESTCD = SYSBP
+vs_raw,Vital Signs,SYS_BP,Systolic Blood Pressure,,FALSE,VSORRESU = 'mmHG'
+vs_raw,Vital Signs,DIA_BP,Diastolic Blood Pressure,,FALSE,VSORRES when VSTESTCD = DIABP
+vs_raw,Vital Signs,DIA_BP,Diastolic Blood Pressure,,FALSE,VSORRESU = 'mmHG'
+vs_raw,Vital Signs,PULSE,Pulse,,FALSE,VSORRES when VSTESTCD = PULSE
+vs_raw,Vital Signs,PULSE,Pulse,,FALSE,VSORRESU = 'BEATS/MIN'
+vs_raw,Vital Signs,SUBPOS,Position,,FALSE,If VSTESTCD is equal to SYSBP,DIABP,PULSE then map VSPOS
